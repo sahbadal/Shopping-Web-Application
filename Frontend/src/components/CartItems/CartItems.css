@@ -1,0 +1,122 @@
+
+.cart-items {
+    width: 80%;
+    margin: 80px auto;
+}
+.cart-items hr{
+    height: 2px;
+    border: none;
+    background: #aaa;
+}
+
+.cart-items-title {
+    display:grid;
+    grid-template-columns: .5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap:70px;
+    color: #555;
+    font-size: 18px;
+    padding: 20px 0px;
+    font-weight: 600;
+}
+.cart-items-format{
+    font-size: 16px;
+    font-weight: 400;
+    color: #484848;
+    
+}
+.cart-items-format-image{
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.cart-items-format .cross{
+    cursor: pointer;
+    margin: 0px 30px;
+    width: 15px;
+}
+.cart-items-quantity{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ebebeb;
+    background: #fff;
+    margin: 0px 20px;
+}
+.cart-items-price{
+    margin: 0px 10px;
+    color: #e63946;
+}
+
+.cart-bottom {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw, 20px);
+}
+
+.cart-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    color: #1a1a1a;
+}
+
+.cart-total hr {
+    margin: 10px 0px;
+}
+
+.cart-total button {
+    border: none;
+    background: rgb(9, 179, 9);
+    color: #fff;
+    width: max(15vw, 200px);
+    padding: 12px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.cart-total button:hover{
+    background-color: rgb(7, 159, 7);
+}
+
+.cart-promocode {
+    flex: 1;
+}
+
+.cart-promocode p {
+    color: #555;
+}
+
+.cart-promocode-input {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eaeaea;
+    border-radius: 5px;
+}
+
+.cart-promocode-input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.cart-promocode-input button {
+    width: max(10vw, 150px);
+    padding: 12px 5px;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
