@@ -3,6 +3,7 @@ import cors from 'cors'
 import { PORT } from './config/index.js';
 import connectDB from './config/db.js';
 import uploadRoutes from './routes/uploadRoutes.js';
+import productRoutes from './routes/productRoutes.js'
 
 const app = express();
 
@@ -13,6 +14,7 @@ app.use('/images',express.static('uploads/images'));
 connectDB();
 
 app.use('/api',uploadRoutes);
+app.use('/api',productRoutes);
 
 
 
